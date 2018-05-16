@@ -36,16 +36,12 @@
     <h4>Non-ASCII characters</h4>
     For the remaining non-ASCII characters, either the actual Unicode character (e.g., ```∞```) or the equivalent Unicode escape (e.g., ```\u221e```) is used. The choice depends only on which makes the code easier to read and understand. Unicode escapes are discouraged for printable characters at any location and are strongly discouraged outside of string literals and comments.
     
-   | Example                           | Discussion                                                      |
-   |:---------------------------------:|:---------------------------------------------------------------:|
-   | ```val unitAbbrev = "μs"```       | Best: perfectly clear even without a comment.                   |
-   | Button           | btn_                  |
-   | Dialog           | dialog_               |
-   | Divider          | divider_              |
-   | Icon             | ic_                   |
-   | Menu             | menu_                 |
-   | Notification     | notification_         |
-   | Tab              | tab_                  |
+   | Example                                | Discussion                                                               |
+   |:--------------------------------------:|:------------------------------------------------------------------------:|
+   | ```val unitAbbrev = "μs"```            | Best: perfectly clear even without a comment.                            |
+   | ```val unitAbbrev = "\u03bcs" // μs``` | Poor: there’s no reason to use an escape with a printable character      |
+   | ```val unitAbbrev = "\u03bcs" ```      | Poor: the reader has no idea what this is.                               |
+   | ```return "\ufeff" + content```        | Good: use escapes for non-printable characters, and comment if necessary.|
     
   <a id="source_files_structure"><h3>Structure</h3></a>
 
