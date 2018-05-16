@@ -153,6 +153,17 @@ Exactly one blank line separates each of these sections.
   ![2](resources/functions_screen0.png)
   __Правильно__:
   ![3](resources/functions_screen1.png)
+  
+  When a function contains only a single expression it can be represented as an expression function.<br>
+  For example:
+  ```java
+  fun toString(): String {
+    return "Hello world!"
+  }
+  ```
+  ```java
+  fun toString(): String = "Hello world!""
+  ```
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
   
   <a id="formatting_specific_constructs"><h3>Specific constructs</h3></a>
