@@ -87,6 +87,12 @@ Exactly one blank line separates each of these sections.
 
   <a id="formatting_braces"><h3>Braces</h3></a>
   
+  Braces are not required for ```when``` branches and ```if``` statement bodies which have no ``else if`` / ``else`` branches and which fit on a single line.<br>
+  For example:
+  ```java
+  if(TextUtils.isEmpty(inputId?.text)) dbResultPresenter?.execute()
+  ```
+  
   <a id="formatting_indentation"><h3>Indentation</h3></a>
   
   <a id="formatting_one_statement_per_line"><h3>One statement per line</h3></a>
