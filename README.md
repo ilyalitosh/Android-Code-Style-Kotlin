@@ -44,7 +44,8 @@
    | ```return "\ufeff" + content```        | Good: use escapes for non-printable characters, and comment if necessary.|
     
   <a id="source_files_structure"><h3>Structure</h3></a>
-  A .kt file comprises of the following, in order:
+  
+  A ```.kt``` file comprises of the following, in order:
   - Copyright and/or license header (optional)
   - File-level annotations
   - Package statement
