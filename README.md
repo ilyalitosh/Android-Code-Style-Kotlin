@@ -52,7 +52,33 @@
   - Top-level declarations
     
 Exactly one blank line separates each of these sections.
-
+  <h4>Copyright / License</h4>
+  If a copyright or license header belongs in the file it should be placed at the immediate top in a multi-line comment.<br>
+  For example:<br>
+  ```java
+  /*
+   * Copyright 2017 Google, Inc.
+   *
+   * ...
+   */
+  ```
+  Do not use a KDoc-style or single-line-style comment.
+  <h4>File-level annotations</h4>
+  Annotations with the ‘file’ use-site target are placed between any header comment and the package declaration.
+  <h4>Package statement</h4>
+  The package statement is not subject to any column limit and is never line-wrapped.
+  <h4>Import statements</h4>
+  Import statements for classes, functions, and properties are grouped together in a single list and ASCII sorted.<br>
+  Wildcard imports (of any type) are not allowed.<br>
+  Similar to the package statement, import statements are not subject to a column limit and they are never line-wrapped.
+  <h4>Top-level declarations</h4>
+  A ```.kt``` file can declare one or more types, functions, properties, or type aliases at the top-level.<br>
+  The contents of a file should be focused on a single theme. Examples of this would be a single public type or a set of extension functions performing the same operation on multiple receiver types. Unrelated declarations should be separated into their own files and public declarations within a single file should be minimized.<br>
+  No explicit restriction is placed on the number nor order of the contents of a file.<br>
+  Source files are usually read from top-to-bottom meaning that the order, in general, should reflect that the declarations higher up will inform understanding of those farther down. Different files may choose to order their contents differently. Similarly, one file may contain 100 properties, another 10 functions, and yet another a single class.<br>
+  What is important is that each class uses some logical order, which its maintainer could explain if asked. For example, new functions are not just habitually added to the end of the class, as that would yield “chronological by date added” ordering, which is not a logical ordering.
+  <h4>Class member ordering</h4>
+  The order of members within a class follow the same rules as the top-level declarations.
 <a id="formatting"><h2>Formatting</h2></a>
 
   <a id="formatting_braces"><h3>Braces</h3></a>
