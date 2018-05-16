@@ -19,14 +19,12 @@
 
   <a id="source_files_naming"><h3>Naming</h3></a>
   If a source file contains only a single top-level class, the file name should reflect the case-sensitive name plus the ```.kt``` extension. Otherwise, if a source file contains multiple top-level declarations, choose a name that describes the contents of the file, apply PascalCase, and append the ```.kt``` extension.
-  
   ```java
   /* The file name must be HomeActivity.kt */
   class HomeActivity {
     // ...
   }
   ```
-  
   <a id="source_files_special_characters"><h3>Special Characters</h3></a>
     <h4>Whitespace characters</h4>
     Aside from the line terminator sequence, the ASCII horizontal space character (0x20) is the only whitespace character that appears anywhere in a source file.<br>
