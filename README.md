@@ -173,6 +173,7 @@ Exactly one blank line separates each of these sections.
   When there are multiple continuation lines, indentation may be varied beyond +8 as desired. In general, two continuation lines use the same indentation level if and only if they begin with syntactically parallel elements.
   
   <h4>Functions</h4>
+  
   When a function signature does not fit on a single line, break each parameter declaration onto its own line. Parameters defined in this format should use a continuation indent (+8). The closing parenthesis (```)```) and return type are placed on their own line with no additional indent.<br>
   
   For example:<br>
