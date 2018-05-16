@@ -20,7 +20,6 @@
     - [Acronyms](#naming_acronyms)
 4. [Documentation](#documentation)
     - [Formatting](#documentation_formatting)
-    - [Summary fragment](#documentation_summary_fragment)
     - [Usage](#documentation_usage)
 
 
@@ -349,8 +348,26 @@ Special prefixes or suffixes, like those seen in the examples ```name_```, ```mN
 
   <a id="documentation_formatting"><h3>Formatting</h3></a>
   
-  <a id="documentation_summary_fragment"><h3>Summary fragment</h3></a>
+  The basic formatting of KDoc blocks is seen in this example.<br>
+  For example:
+  
+  ```java
+  /**
+   * Multiple lines of 
+   * KDoc text, 
+   */
+  fun method(arg: String) {
+      // …
+  }
+  
+  /** Single line of KDoc text,  */
+  fun method(arg: String) {
+      // …
+  }
+  ```
+  The basic form is always acceptable. The single-line form may be substituted when the entirety of the KDoc block (including comment markers) can fit on a single line. Note that this only applies when there are no block tags such as ```@return```
   
   <a id="documentation_usage"><h3>Usage</h3></a>
   
+  At the minimum, KDoc is present for every ```public``` type, and every ```public``` or ```protected``` member of such a type, with a few exceptions noted below.
   
