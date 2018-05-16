@@ -161,7 +161,7 @@ Exactly one blank line separates each of these sections.
   
   Code has a column limit of 100 characters. Except as noted below, any line that would exceed this limit must be line-wrapped, as explained below.<br>
   For example:
-  ![1](resources/string_length_screen.png)
+  ![1](resources/string_length_screen_.png)
   
   Exceptions:
   - Lines where obeying the column limit is not possible (for example, a long URL in KDoc).
