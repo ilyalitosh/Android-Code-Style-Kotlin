@@ -164,6 +164,16 @@ Exactly one blank line separates each of these sections.
   ```java
   fun toString(): String = "Hello world!""
   ```
+  
+  <h4>Properties</h4>
+  When a property initializer does not fit on a single line, break after the equals sign (```=```) and use a continuation indent(+8).
+  
+  For example:<br>
+  __Неправильно__:
+  ![4](resources/properties_screen0.png)
+  __Правильно__:
+  ![5](resources/properties_screen1.png)
+  
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
   
   <a id="formatting_specific_constructs"><h3>Specific constructs</h3></a>
