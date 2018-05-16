@@ -25,4 +25,14 @@
 
 <a id="formatting"><h2>Formatting</h2></a>
 
-  <a id="source_files_structure"><h3>Structure</h3></a>
+  <a id="formatting_braces"><h3>Braces</h3></a>
+  
+  <a id="formatting_indentation"><h3>Indentation</h3></a>
+  
+  <a id="formatting_one_statement_per_line"><h3>One statement per line</h3></a>
+  
+  <a id="formatting_line_wrapping"><h3>Line wrapping</h3></a>
+  
+  <a id="formatting_whitespace"><h3>Whitespace</h3></a>
+  
+  <a id="formatting_specific_constructs"><h3>Specific constructs</h3></a>
