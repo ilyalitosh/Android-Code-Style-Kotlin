@@ -292,20 +292,7 @@ Multiple consecutive blank lines are permitted, but not encouraged or ever requi
   <h4>Annotations</h4>
   Member or type annotations are placed on separate lines immediately prior to the annotated construct.<br>
   Annotations without arguments can be placed on a single line.<br>
-  When only a single annotation without arguments is present it may be placed on the same line as the declaration.<br>
-  
-  3. [Naming](#naming)
-    - [Package Names](#naming_package_names)
-    - [Type names](#naming_type_names)
-    - [Function names](#naming_function_names)
-    - [Constant names](#naming_constant_names)
-    - [Non-constant names](#naming_non_constant_names)
-    - [Type variable names](#naming_type_variable_names)
-    - [Camel case](#naming_camel_case)
-4. [Documentation](#documentation)
-    - [Formatting](#documentation_formatting)
-    - [Summary fragment](#documentation_summary_fragment)
-    - [Usage](#documentation_usage)
+  When only a single annotation without arguments is present it may be placed on the same line as the declaration.
   
 <a id="naming"><h2>Naming</h2></a>
 
@@ -333,8 +320,8 @@ Special prefixes or suffixes, like those seen in the examples ```name_```, ```mN
   Underscores are permitted to appear in test function names to separate logical components of the name.<br>
   For example:
   ```java
-  @Test fun pop_emptyStack() {
-      // …
+  @Test fun ensureEverythingWorks_onAndroid() {
+      // ...
   }
   ```
   
