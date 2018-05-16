@@ -18,6 +18,14 @@
 <a id="source_files"><h2>Source files</h2></a>
 
   <a id="source_files_naming"><h3>Naming</h3></a>
+  
+  If a source file contains only a single top-level class, the file name should reflect the case-sensitive name plus the ```.kt``` extension. Otherwise, if a source file contains multiple top-level declarations, choose a name that describes the contents of the file, apply PascalCase, and append the ```.kt``` extension.<br>
+  ```java
+  // The file name must be HomeActivity.kt
+  class HomeActivity {
+    /// ...
+  }
+  ```
 
   <a id="source_files_special_characters"><h3>Special Characters</h3></a>
 
