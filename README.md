@@ -176,4 +176,81 @@ Exactly one blank line separates each of these sections.
   
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
   
+  <h4>Vertical</h4>
+  A single blank line appears:
+  - Between consecutive members of a class: properties, constructors, functions, nested classes, etc.
+    - Exception: A blank line between two consecutive properties (having no other code between them) is optional. Such blank lines are used as needed to create logical groupings of properties and associate properties with their backing property, if present.
+    - Exception: Blank lines between enum constants are covered below.
+  - Between statements, as needed to organize the code into logical subsections.
+  - Optionally before the first statement in a function, before the first member of a class, or after the last member of a class (neither encourage nor discouraged).
+  - As required by other sections of this document (Such as the “Structure” section).
+
+Multiple consecutive blank lines are permitted, but not encouraged or ever required.
+  <h4>Horizontal</h4>
+  A single ASCII space also appears in the following places only:
+  - Separating any reserved word, such as ```else``` or ```catch```, from a closing curly brace (```}```) that precedes it on that line:
+  ```java
+  // NO
+  }else {
+  }
+  
+  // YES
+  } else {
+  }
+  ```
+  - Separating any reserved word, such as ```if```, ```for```, or ```catch``` from an open parenthesis (```(```) that follows it on that line:
+  ```java
+  // NO
+  for(i in 0..1) {
+  }
+  
+  // YES
+  for (i in 0..1) {
+  }
+  ```
+  - Before any open curly brace (```{```):
+  ```java
+  // NO
+  if (list.isEmpty()){
+  }
+  
+  // YES
+  if (list.isEmpty()) {
+  }
+  ```
+  - On both sides of any binary operator:
+  ```java
+  // NO
+  val two = 1+1
+  
+  // YES
+  val two = 1 + 1
+  ```
+  But not the two colons (```::```) of a member reference and the dot separator (```.```).
+  - Before a colon (```:```) only if used in a class declaration for specifying a base class / interfaces:
+  ```java
+  // NO
+  class MyThread: Runnable {
+      // ...
+  }
+  
+  // YES
+  class MyThread : Runnable {
+      // ...
+  }
+  ```
+  - After a comma (```,```) or colon (```:```):
+  ```java
+  // NO
+  val sum = getSum(1,2)
+  
+  // YES
+  val sum = getSum(1, 2)
+  ```
+  - On both sides of the double slash (```//```) that begins an end-of-line comment:
+  ```java
+  //NO
+  
+  // YES
+  ```
   <a id="formatting_specific_constructs"><h3>Specific constructs</h3></a>
