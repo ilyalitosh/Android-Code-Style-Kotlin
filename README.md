@@ -6,6 +6,7 @@
     - [Special Characters](#source_files_special_characters)
     - [File structure](#source_files_structure)
     - [Package structure](#source_files_package_structure)
+    - [Class structure](#source_files_class_structure)
 2. [Formatting](#formatting)
     - [Braces](#formatting_braces)
     - [Indentation](#formatting_indentation)
@@ -97,6 +98,17 @@ Exactly one blank line separates each of these sections.
   
   In mixed-language projects, Kotlin source files should reside in the same source root as the Java source files, and follow the same directory structure (each file should be stored in the directory corresponding to each package statement).<br>
   In pure Kotlin projects, the recommended directory structure is to follow the package structure with the common root package omitted (e.g. if all the code in the project is in the ```org.example.kotlin``` package and its subpackages, files with the ```org.example.kotlin``` package should be placed directly under the source root, and files in ```org.example.kotlin.foo.bar``` should be in the ```foo/bar``` subdirectory of the source root).
+  
+  <a id="source_files_class_structure"><h3>Class structure</h3></a>
+  
+  Generally, the contents of a class is sorted in the following order:
+  - Property declarations and initializer blocks;
+  - Secondary constructors;
+  - Method declarations;
+  - Companion object.
+  
+  Do not sort the method declarations alphabetically or by visibility, and do not separate regular methods from extension methods. Instead, put related stuff together, so that someone reading the class from top to bottom would be able to follow the logic of what's happening. Choose an order (either higher-level stuff first, or vice versa) and stick to it.<br>
+  Put nested classes next to the code that uses those classes. If the classes are intended to be used externally and aren't referenced inside the class, put them in the end, after the companion object.
   
 <a id="formatting"><h2>Formatting</h2></a>
 
