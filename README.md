@@ -5,6 +5,7 @@
     - [Naming](#source_files_naming)
     - [Special Characters](#source_files_special_characters)
     - [Structure](#source_files_structure)
+    - [Package structure](#source_files_package_structure)
 2. [Formatting](#formatting)
     - [Braces](#formatting_braces)
     - [Indentation](#formatting_indentation)
@@ -91,6 +92,12 @@ Exactly one blank line separates each of these sections.
   What is important is that each class uses some logical order, which its maintainer could explain if asked. For example, new functions are not just habitually added to the end of the class, as that would yield “chronological by date added” ordering, which is not a logical ordering.
   <h4>Class member ordering</h4>
   The order of members within a class follow the same rules as the top-level declarations.
+  
+  <a id="source_files_package_structure"><h3>Package structure</h3></a>
+  
+  In mixed-language projects, Kotlin source files should reside in the same source root as the Java source files, and follow the same directory structure (each file should be stored in the directory corresponding to each package statement).<br>
+  In pure Kotlin projects, the recommended directory structure is to follow the package structure with the common root package omitted (e.g. if all the code in the project is in the ```org.example.kotlin``` package and its subpackages, files with the ```org.example.kotlin``` package should be placed directly under the source root, and files in ```org.example.kotlin.foo.bar``` should be in the ```foo/bar``` subdirectory of the source root).
+  
 <a id="formatting"><h2>Formatting</h2></a>
 
   <a id="formatting_braces"><h3>Braces</h3></a>
