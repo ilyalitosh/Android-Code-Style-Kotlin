@@ -94,7 +94,6 @@ Exactly one blank line separates each of these sections.
   ```
   Braces are otherwise required for any if, for, when branch, do, and while statements, even when the body is empty or contains only a single statement.
   For example:
-  
   ```java
   // NO
   if(TextUtils.isEmpty(inputId?.text))
@@ -108,6 +107,7 @@ Exactly one blank line separates each of these sections.
   <h4>Empty blocks</h4>
   An empty block or block-like construct must be in K&R style.<br>
   For example:
+  
   ```java
   // NO
   try {
