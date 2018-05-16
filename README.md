@@ -256,3 +256,14 @@ Multiple consecutive blank lines are permitted, but not encouraged or ever requi
   // YES
   ```
   <a id="formatting_specific_constructs"><h3>Specific constructs</h3></a>
+  
+  <h4>Enum classes</h4>
+  An enum with no functions and no documentation on its constants may optionally be formatted as a single line.<br>
+  When the constants in an enum are placed on separate lines, a blank line is not required between them except in the case where they define a body.<br>
+  Since enum classes are classes, all other rules for formatting classes apply.
+  
+  <h4>Annotations</h4>
+  Member or type annotations are placed on separate lines immediately prior to the annotated construct.<br>
+  Annotations without arguments can be placed on a single line.<br>
+  When only a single annotation without arguments is present it may be placed on the same line as the declaration.<br>
+  
