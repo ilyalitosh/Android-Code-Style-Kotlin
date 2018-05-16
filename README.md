@@ -89,10 +89,37 @@ Exactly one blank line separates each of these sections.
   
   Braces are not required for ```when``` branches and ```if``` statement bodies which have no ``else if`` / ``else`` branches and which fit on a single line.<br>
   For example:
-  ```kotlin
+  ```java
   if(TextUtils.isEmpty(inputId?.text)) dbResultPresenter?.execute()
   ```
-  
+  Braces are otherwise required for any if, for, when branch, do, and while statements, even when the body is empty or contains only a single statement.
+  For example:
+  ```java
+  // NO
+  if(TextUtils.isEmpty(inputId?.text))
+      dbResultPresenter?.execute()
+      
+  // YES
+  if(TextUtils.isEmpty(inputId?.text)){
+      dbResultPresenter?.execute()
+  }
+  ```
+  <h4>Empty blocks</h4>
+  An empty block or block-like construct must be in K&R style.<br>
+  For example:
+  ```java
+  // NO
+  try {
+      App.getSnappyDBSession()
+              .put("android:" + i.toString(), generateEntity(0))
+  } catch (e: SnappydbException) {}
+  // YES
+  try {
+      App.getSnappyDBSession()
+              .put("android:" + i.toString(), generateEntity(0))
+  } catch (e: SnappydbException) {
+  }
+  ```
   <a id="formatting_indentation"><h3>Indentation</h3></a>
   
   <a id="formatting_one_statement_per_line"><h3>One statement per line</h3></a>
