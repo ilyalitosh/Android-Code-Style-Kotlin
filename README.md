@@ -37,7 +37,7 @@
     For the remaining non-ASCII characters, either the actual Unicode character (e.g., ```∞```) or the equivalent Unicode escape (e.g., ```\u221e```) is used. The choice depends only on which makes the code easier to read and understand. Unicode escapes are discouraged for printable characters at any location and are strongly discouraged outside of string literals and comments.
     
    | Example          | Discussion            |
-   |:----------------:|:-------------------------------:|
+   |:----------------:|:---------------------:|
    | ```val unitAbbrev = "μs"```       | Best: perfectly clear even without a comment.                   |
    | Button           | btn_                  |
    | Dialog           | dialog_               |
