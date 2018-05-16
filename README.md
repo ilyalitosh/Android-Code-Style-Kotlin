@@ -12,7 +12,16 @@
     - [Line wrapping](#formatting_line_wrapping)
     - [Whitespace](#formatting_whitespace)
     - [Specific constructs](#formatting_specific_constructs)
-
+3. [Naming](#naming)
+    - [Package Names](#naming_package_names)
+    - [Type names](#naming_type_names)
+    - [Function names](#naming_function_names)
+    - [Constant names](#naming_constant_names)
+    - [Acronyms](#naming_acronyms)
+4. [Documentation](#documentation)
+    - [Formatting](#documentation_formatting)
+    - [Summary fragment](#documentation_summary_fragment)
+    - [Usage](#documentation_usage)
 
 
 <a id="source_files"><h2>Source files</h2></a>
@@ -266,4 +275,81 @@ Multiple consecutive blank lines are permitted, but not encouraged or ever requi
   Member or type annotations are placed on separate lines immediately prior to the annotated construct.<br>
   Annotations without arguments can be placed on a single line.<br>
   When only a single annotation without arguments is present it may be placed on the same line as the declaration.<br>
+  
+  3. [Naming](#naming)
+    - [Package Names](#naming_package_names)
+    - [Type names](#naming_type_names)
+    - [Function names](#naming_function_names)
+    - [Constant names](#naming_constant_names)
+    - [Non-constant names](#naming_non_constant_names)
+    - [Type variable names](#naming_type_variable_names)
+    - [Camel case](#naming_camel_case)
+4. [Documentation](#documentation)
+    - [Formatting](#documentation_formatting)
+    - [Summary fragment](#documentation_summary_fragment)
+    - [Usage](#documentation_usage)
+  
+<a id="naming"><h2>Naming</h2></a>
+
+Identifiers use only ASCII letters and digits, and, in a small number of cases noted below, underscores. Thus each valid identifier name is matched by the regular expression ```\w+```.<br>
+Special prefixes or suffixes, like those seen in the examples ```name_```, ```mName```, ```s_name```, and ```kName```, are not used except in the case of backing properties.
+  <a id="naming_package_names"><h3>Package Names</h3></a>
+  
+  Package names are all lowercase, with consecutive words simply concatenated together (no underscores).<br>
+  For example:
+  ```java
+  // NO
+  package com.litosh.ilya_packageOne
+  
+  // YES
+  package com.litosh.ilyapackageone
+  ```
+  <a id="naming_type_names"><h3>Type names</h3></a>
+  
+  Class names are written in PascalCase and are typically nouns or noun phrases. For example, ```Character``` or ```ImmutableList```. Interface names may also be nouns or noun phrases, but may sometimes be adjectives or adjective phrases instead.<br>
+  Test classes are named starting with the name of the class they are testing, and ending with ```Test```. For example, ```HashTest``` or ```HashIntegrationTest```.
+  
+  <a id="naming_function_names"><h3>Function names</h3></a>
+  
+  Function names are written in camelCase and are typically verbs or verb phrases. For example, ```sendMessage``` or ```stop```.<br>
+  Underscores are permitted to appear in test function names to separate logical components of the name.<br>
+  For example:
+  ```java
+  @Test fun pop_emptyStack() {
+      // …
+  }
+  ```
+  
+  <a id="naming_constant_names"><h3>Constant names</h3></a>
+  
+  Constant names use UPPER_SNAKE_CASE: all uppercase letters, with words separated by underscores.<br>
+  Names are typically nouns or noun phrases.<br>
+  Constants which are scalar values must use the ```const``` modifier.<br>
+  For example:
+  ```java
+  const val NUMBER = 5
+  val NAMES = listOf("Alice", "Bob")
+  val AGES = mapOf("Alice" to 35, "Bob" to 32)
+  val COMMA_JOINER = Joiner.on(',') // Joiner is immutable
+  val EMPTY_ARRAY = arrayOf<SomeMutableType>()
+  ```
+
+  <a id="naming_acronyms"><h3>Acronyms</h3></a>
+  
+  Abbreviations and acronyms should be written as words.<br>
+  For example:
+  | Prose form                 | Correct               | Incorrect                        |
+  |:--------------------------:|:---------------------:|:--------------------------------:|
+  | “XML Http Request”         | XmlHttpRequest        | XMLHTTPRequest                   |
+  | “new customer ID”          | newCustomerId         | newCustomerID                    |
+  | “supports IPv6 on iOS”     | supportsIpv6OnIos     | supportsIPv6OnIOS                |
+  
+<a id="documentation"><h2>Documentation</h2></a>  
+
+  <a id="documentation_formatting"><h3>Formatting</h3></a>
+  
+  <a id="documentation_summary_fragment"><h3>Summary fragment</h3></a>
+  
+  <a id="documentation_usage"><h3>Usage</h3></a>
+  
   
