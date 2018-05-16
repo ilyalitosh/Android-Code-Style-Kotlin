@@ -4,7 +4,7 @@
 1. [Source files](#source_files)
     - [Naming](#source_files_naming)
     - [Special Characters](#source_files_special_characters)
-    - [Structure](#source_files_structure)
+    - [File structure](#source_files_structure)
     - [Package structure](#source_files_package_structure)
 2. [Formatting](#formatting)
     - [Braces](#formatting_braces)
@@ -52,7 +52,7 @@
    | ```val unitAbbrev = "\u03bcs" ```      | Poor: the reader has no idea what this is.                               |
    | ```return "\ufeff" + content```        | Good: use escapes for non-printable characters, and comment if necessary.|
     
-  <a id="source_files_structure"><h3>Structure</h3></a>
+  <a id="source_files_structure"><h3>File structure</h3></a>
   
   A ```.kt``` file comprises of the following, in order:
   - Copyright and/or license header (optional)
