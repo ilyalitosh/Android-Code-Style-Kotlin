@@ -157,9 +157,9 @@ Exactly one blank line separates each of these sections.
   When a function signature does not fit on a single line, break each parameter declaration onto its own line. Parameters defined in this format should use a continuation indent (+8). The closing parenthesis (```)```) and return type are placed on their own line with no additional indent.<br>
   
   For example:<br>
-  __Неправильно__:
+  __NO__:
   ![2](resources/functions_screen0.png)
-  __Правильно__:
+  __YES__:
   ![3](resources/functions_screen1.png)
   
   When a function contains only a single expression it can be represented as an expression function.<br>
@@ -177,9 +177,9 @@ Exactly one blank line separates each of these sections.
   When a property initializer does not fit on a single line, break after the equals sign (```=```) and use a continuation indent(+8).
   
   For example:<br>
-  __Неправильно__:
+  __NO__:
   ![4](resources/properties_screen0.png)
-  __Правильно__:
+  __YES__:
   ![5](resources/properties_screen1.png)
   
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
