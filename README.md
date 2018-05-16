@@ -137,6 +137,7 @@ Exactly one blank line separates each of these sections.
   ![1](resources/string_length_screen.png)
   
   Exceptions:
+  
     - Lines where obeying the column limit is not possible (for example, a long URL in KDoc).
     - ```package``` and ```import``` statements.
     - Command lines in a comment that may be cut-and-pasted into a shell.
