@@ -54,7 +54,8 @@
 Exactly one blank line separates each of these sections.
   <h4>Copyright / License</h4>
   If a copyright or license header belongs in the file it should be placed at the immediate top in a multi-line comment.<br>
-  For example:<br>
+  For example:
+  
   ```java
   /*
    * Copyright 2017 Google, Inc.
@@ -62,6 +63,7 @@ Exactly one blank line separates each of these sections.
    * ...
    */
   ```
+  
   Do not use a KDoc-style or single-line-style comment.
   <h4>File-level annotations</h4>
   Annotations with the ‘file’ use-site target are placed between any header comment and the package declaration.
