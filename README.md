@@ -337,6 +337,7 @@ Special prefixes or suffixes, like those seen in the examples ```name_```, ```mN
   <a id="naming_acronyms"><h3>Acronyms</h3></a>
   
   Abbreviations and acronyms should be written as words.<br>
+  
   For example:
   | Prose form                 | Correct               | Incorrect                        |
   |:--------------------------:|:---------------------:|:--------------------------------:|
