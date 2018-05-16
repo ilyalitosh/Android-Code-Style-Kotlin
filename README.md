@@ -209,8 +209,8 @@ Exactly one blank line separates each of these sections.
   
   A single blank line appears:
   - Between consecutive members of a class: properties, constructors, functions, nested classes, etc.
-    - Exception: A blank line between two consecutive properties (having no other code between them) is optional. Such blank lines are used as needed to create logical groupings of properties and associate properties with their backing property, if present.
-    - Exception: Blank lines between enum constants are covered below.
+    - __Exception__: A blank line between two consecutive properties (having no other code between them) is optional. Such blank lines are used as needed to create logical groupings of properties and associate properties with their backing property, if present.
+    - __Exception__: Blank lines between enum constants are covered below.
   - Between statements, as needed to organize the code into logical subsections.
   - Optionally before the first statement in a function, before the first member of a class, or after the last member of a class (neither encourage nor discouraged).
   - As required by other sections of this document (Such as the “Structure” section).
