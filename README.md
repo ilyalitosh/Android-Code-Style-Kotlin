@@ -45,12 +45,11 @@
     
   <a id="source_files_structure"><h3>Structure</h3></a>
   A .kt file comprises of the following, in order:
-  
-    - Copyright and/or license header (optional)
-    - File-level annotations
-    - Package statement
-    - Import statements
-    - Top-level declarations
+  - Copyright and/or license header (optional)
+  - File-level annotations
+  - Package statement
+  - Import statements
+  - Top-level declarations
     
 Exactly one blank line separates each of these sections.
 
