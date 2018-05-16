@@ -34,17 +34,19 @@
     <h4>Special escape sequences</h4>
     For any character that has a special escape sequence (```\b```, ```\n```, ```\r```, ```\t```, ```\'```, ```\"```, ```\\```, and ```\$```), that sequence is used rather than the corresponding Unicode (e.g., ```\u000a```) escape.
     <h4>Non-ASCII characters</h4>
-    For the remaining non-ASCII characters, either the actual Unicode character (e.g., ```∞```) or the equivalent Unicode escape (e.g., ```\u221e```) is used. The choice depends only on which makes the code easier to read and understand. Unicode escapes are discouraged for printable characters at any location and are strongly discouraged outside of string literals and comments.<br>
-    | Example          | Discussion            |
-    |:----------------:|:-------------------------------:|
-    | ```val unitAbbrev = "μs"```       | Best: perfectly clear even without a comment.                   |
-    | Button           | btn_                  |
-    | Dialog           | dialog_               |
-    | Divider          | divider_              |
-    | Icon             | ic_                   |
-    | Menu             | menu_                 |
-    | Notification     | notification_         |
-    | Tab              | tab_                  |
+    For the remaining non-ASCII characters, either the actual Unicode character (e.g., ```∞```) or the equivalent Unicode escape (e.g., ```\u221e```) is used. The choice depends only on which makes the code easier to read and understand. Unicode escapes are discouraged for printable characters at any location and are strongly discouraged outside of string literals and comments.
+    
+   | Example          | Discussion            |
+   |:----------------:|:-------------------------------:|
+   | ```val unitAbbrev = "μs"```       | Best: perfectly clear even without a comment.                   |
+   | Button           | btn_                  |
+   | Dialog           | dialog_               |
+   | Divider          | divider_              |
+   | Icon             | ic_                   |
+   | Menu             | menu_                 |
+   | Notification     | notification_         |
+   | Tab              | tab_                  |
+    
   <a id="source_files_structure"><h3>Structure</h3></a>
 
 <a id="formatting"><h2>Formatting</h2></a>
