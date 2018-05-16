@@ -20,7 +20,7 @@
   <a id="source_files_naming"><h3>Naming</h3></a>
   If a source file contains only a single top-level class, the file name should reflect the case-sensitive name plus the ```.kt``` extension. Otherwise, if a source file contains multiple top-level declarations, choose a name that describes the contents of the file, apply PascalCase, and append the ```.kt``` extension.<br>
   ```java
-  // The file name must be HomeActivity.kt
+  /* The file name must be HomeActivity.kt */
   class HomeActivity {
     // ...
   }
@@ -44,6 +44,14 @@
    | ```return "\ufeff" + content```        | Good: use escapes for non-printable characters, and comment if necessary.|
     
   <a id="source_files_structure"><h3>Structure</h3></a>
+  A .kt file comprises of the following, in order:
+    - Copyright and/or license header (optional)
+    - File-level annotations
+    - Package statement
+    - Import statements
+    - Top-level declarations
+    
+Exactly one blank line separates each of these sections.
 
 <a id="formatting"><h2>Formatting</h2></a>
 
