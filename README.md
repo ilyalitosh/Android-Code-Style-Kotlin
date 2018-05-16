@@ -74,6 +74,7 @@ Exactly one blank line separates each of these sections.
   Wildcard imports (of any type) are not allowed.<br>
   Similar to the package statement, import statements are not subject to a column limit and they are never line-wrapped.
   <h4>Top-level declarations</h4>
+  
   A ```.kt``` file can declare one or more types, functions, properties, or type aliases at the top-level.<br>
   The contents of a file should be focused on a single theme. Examples of this would be a single public type or a set of extension functions performing the same operation on multiple receiver types. Unrelated declarations should be separated into their own files and public declarations within a single file should be minimized.<br>
   No explicit restriction is placed on the number nor order of the contents of a file.<br>
