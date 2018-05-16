@@ -147,10 +147,11 @@ Exactly one blank line separates each of these sections.
   
   <h4>Functions</h4>
   When a function signature does not fit on a single line, break each parameter declaration onto its own line. Parameters defined in this format should use a continuation indent (+8). The closing parenthesis (```)```) and return type are placed on their own line with no additional indent.<br>
-  For example:<br>
-  Неправильно:<br>
+  
+  For example:
+  Неправильно:
   ![2](resources/functions_screen0.png)
-  Правильно:<br>
+  Правильно:
   ![3](resources/functions_screen1.png)
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
   
