@@ -114,6 +114,7 @@ Exactly one blank line separates each of these sections.
       App.getSnappyDBSession()
               .put("android:" + i.toString(), generateEntity(0))
   } catch (e: SnappydbException) {}
+  
   // YES
   try {
       App.getSnappyDBSession()
@@ -123,9 +124,22 @@ Exactly one blank line separates each of these sections.
   ```
   <a id="formatting_indentation"><h3>Indentation</h3></a>
   
+  Each time a new block or block-like construct is opened, the indent increases by four spaces. When the block ends, the indent returns to the previous indent level. The indent level applies to both code and comments throughout the block.
+  
   <a id="formatting_one_statement_per_line"><h3>One statement per line</h3></a>
   
+  Each statement is followed by a line break. Semicolons are not used.
+  
   <a id="formatting_line_wrapping"><h3>Line wrapping</h3></a>
+  
+  Code has a column limit of 100 characters. Except as noted below, any line that would exceed this limit must be line-wrapped, as explained below.<br>
+  For example:
+  ![1](resources/string_length_screen.png)
+  
+  Exceptions:
+    - Lines where obeying the column limit is not possible (for example, a long URL in KDoc).
+    - ```package``` and ```import``` statements.
+    - Command lines in a comment that may be cut-and-pasted into a shell.
   
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
   
