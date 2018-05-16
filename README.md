@@ -188,6 +188,7 @@ Exactly one blank line separates each of these sections.
 
 Multiple consecutive blank lines are permitted, but not encouraged or ever required.
   <h4>Horizontal</h4>
+  
   A single ASCII space also appears in the following places only:
   - Separating any reserved word, such as ```else``` or ```catch```, from a closing curly brace (```}```) that precedes it on that line:
   ```java
