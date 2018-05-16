@@ -4,7 +4,7 @@
 1. [Source files](#source_files)
     - [Naming](#source_files_naming)
     - [Special Characters](#source_files_special_characters)
-    - [Structure](#source_files_naming)
+    - [Structure](#source_files_structure)
 2. [Formatting](#formatting)
     - [Braces](#formatting_braces)
     - [Indentation](#formatting_indentation)
@@ -15,12 +15,12 @@
 
 
 
-<a name="comments_javadoc"><h2>Source files</h2></a>
+<a id="source_files"><h2>Source files</h2></a>
 
-<a name="comments_javadoc"><h2>Source files</h2></a>
+<a id="source_files_naming"><h3>Naming</h2></a>
 
-<a name="comments_javadoc"><h2>Source files</h2></a>
+<a id="source_files_special_characters"><h3>Special Characters</h2></a>
 
-<a name="comments_javadoc"><h2>Source files</h2></a>
+<a id="source_files_structure"><h3>Structure</h2></a>
 
-<a name="comments_javadoc"><h2>Source files</h2></a>
+<a id="formatting"><h2>Formatting</h2></a>
