@@ -177,6 +177,7 @@ Exactly one blank line separates each of these sections.
   <a id="formatting_whitespace"><h3>Whitespace</h3></a>
   
   <h4>Vertical</h4>
+  
   A single blank line appears:
   - Between consecutive members of a class: properties, constructors, functions, nested classes, etc.
     - Exception: A blank line between two consecutive properties (having no other code between them) is optional. Such blank lines are used as needed to create logical groupings of properties and associate properties with their backing property, if present.
