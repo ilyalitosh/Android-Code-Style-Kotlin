@@ -89,7 +89,7 @@ Exactly one blank line separates each of these sections.
   
   Braces are not required for ```when``` branches and ```if``` statement bodies which have no ``else if`` / ``else`` branches and which fit on a single line.<br>
   For example:
-  ```java
+  ```kotlin
   if(TextUtils.isEmpty(inputId?.text)) dbResultPresenter?.execute()
   ```
   
