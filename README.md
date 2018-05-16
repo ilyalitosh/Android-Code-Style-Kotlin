@@ -190,10 +190,11 @@ Exactly one blank line separates each of these sections.
   }
   ```
   ```java
-  fun toString(): String = "Hello world!""
+  fun toString(): String = "Hello world!"
   ```
   
   <h4>Properties</h4>
+  
   When a property initializer does not fit on a single line, break after the equals sign (```=```) and use a continuation indent(+8).
   
   For example:<br>
